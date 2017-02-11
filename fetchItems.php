@@ -4,8 +4,8 @@
 	$current_password = $_SESSION["password"];
 
 	// open database
-	$con = mysqli_connect("localhost","root","root","fridge_items");
-	$mysqli = new mysqli("localhost","root", "root", "fridge_items");
+	$con = mysqli_connect("localhost","root","password","smif");
+	$mysqli = new mysqli("localhost","root", "password", "smif");
 
 	// Check connection
 	if ($mysqli->connect_errno)
