@@ -1,11 +1,26 @@
 <?php
+	ini_set('display_errors',1);
+	ini_set('display_startup_errors',1);
+	error_reporting(E_ALL);
+
 	session_start();
-	$current_username = $_SESSION["username"];
-	$current_password = $_SESSION["password"];
+	header('Content-Type: application/json');
+	$current_username = "";
+	$current_password = "";
+	if(isset($current_username) && isset($current_password)){
+		$current_username = "Jennifer";
+		$current_password = "1234";
+	}
+	else{
+		$current_username = $_SESSION["username"];
+		$current_password = $_SESSION["password"];
+	}
+
+
 
 	// open database
-	$con = mysqli_connect("localhost","root","password","smif");
-	$mysqli = new mysqli("localhost","root", "password", "smif");
+	$con = mysqli_connect("localhost","root","root","fridge_items");
+	$mysqli = new mysqli("localhost","root", "root", "fridge_items");
 
 	// Check connection
 	if ($mysqli->connect_errno)

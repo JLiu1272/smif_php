@@ -1,0 +1,5 @@
+{
+    "require": {
+        "jwage/php-apns": "^0.0.3"
+    }
+}

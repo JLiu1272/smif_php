@@ -19,7 +19,7 @@ if ($mysqli->connect_errno)
 $username = mysqli_real_escape_string($con, $_POST["username"]);
 $password = mysqli_real_escape_string($con, $_POST["password"]);
 
-//$username = 'jennifer';
+//$username = 'Jennifer';
 //$password = '1234';
 
 // get the parameters
