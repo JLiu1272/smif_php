@@ -1,7 +1,5 @@
 <?php
-	ini_set('display_errors',1);
-	ini_set('display_startup_errors',1);
-	error_reporting(E_ALL);
+	require "connect.php"
 
 	session_start();
 	header('Content-Type: application/json');
@@ -15,19 +13,6 @@
 		$current_username = $_SESSION["username"];
 		$current_password = $_SESSION["password"];
 	}
-
-
-
-	// open database
-	$con = mysqli_connect("localhost","root","root","fridge_items");
-	$mysqli = new mysqli("localhost","root", "root", "fridge_items");
-
-	// Check connection
-	if ($mysqli->connect_errno)
-	{
-	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	  exit();
-	} 
 
 	//Getting the user_id 
 	$query_id = "SELECT id FROM user WHERE username='$current_username'";
