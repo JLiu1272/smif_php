@@ -3,24 +3,24 @@
 	ini_set('display_startup_errors',1);
 	error_reporting(E_ALL);
 
-	$dbhost = $_SERVER["smif.ct8vehnhv9o3.us-east-1.rds.amazonaws.com"];
-	$dbport = $_SERVER["3306"];
-	$dbname = $_SERVER["SMIF"];
+	$dbhost = "smif.ct8vehnhv9o3.us-east-1.rds.amazonaws.com";
+	$dbport = "3306";
+	$dbname = "SMIF";
 	$charset = 'utf8' ;
 
 	$dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
-	$username = $_SERVER['jwt7689'];
-	$password = $_SERVER['smiffy_admin'];
+	$username = 'jwt7689';
+	$password = 'smiffy_admin';
 
 	$pdo = new PDO($dsn, $username, $password);
 
 
 	// Check connection
-	if ($mysqli->connect_errno)
+	/*if ($mysqli->connect_errno)
 	{
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	  exit();
-	} 
+	} */
 
 	session_start();
 	header('Content-Type: application/json');
