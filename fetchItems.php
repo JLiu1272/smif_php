@@ -3,9 +3,9 @@
 	ini_set('display_startup_errors',1);
 	error_reporting(E_ALL);
 
-	$dbhost = $_SERVER['smif.ct8vehnhv9o3.us-east-1.rds.amazonaws.com'];
-	$dbport = $_SERVER['3306'];
-	$dbname = $_SERVER['SMIF'];
+	$dbhost = $_SERVER["smif.ct8vehnhv9o3.us-east-1.rds.amazonaws.com"];
+	$dbport = $_SERVER["3306"];
+	$dbname = $_SERVER["SMIF"];
 	$charset = 'utf8' ;
 
 	$dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
