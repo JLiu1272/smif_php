@@ -1,4 +1,16 @@
 <?php
+	ini_set('display_errors',1);
+        ini_set('display_startup_errors',1);
+        error_reporting(E_ALL);
+ 
+        $dbhost = "smif.ct8vehnhv9o3.us-east-1.rds.amazonaws.com";
+        $dbport = "3306";
+        $dbname = "SMIF";
+        $charset = 'utf8' ;
+ 
+        $dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
+        $username = 'jwt7689';
+        $password = 'smiffy_admin';
 
 // specify that this will return JSON
 //Creating Session so that I know who is logged in 
@@ -6,23 +18,12 @@ session_start();
 
 header('Content-type: application/json');
 
-// open database
-
-$con = mysqli_connect("localhost","root","root","fridge_items");
-
-// Check connection
-
-if (mysqli_connect_errno()) {
-    echo json_encode(array("success" => false, "message" => mysqli_connect_error(), "sqlerrno" => mysqli_connect_errno()));
-    exit;
-}
-
 // get the parameters
 //$username = "Christine";
 //$password = "1234";
 
-$username = mysqli_real_escape_string($con, $_POST["username"]);
-$password = mysqli_real_escape_string($con, $_POST["password"]);
+$username = $_POST["username"];
+$password = $_POST["password"];
 
 //Session 
 //This ensures that this information is accessible throughout
@@ -34,17 +35,13 @@ $_SESSION["password"] = $password;
 //Hash password 
 $hashPwd = password_hash($password, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO user (username, password) VALUES ('{$username}', '{$hashPwd}')";
-
-if (!mysqli_query($con, $sql)) {
-    $response = array("success" => false, "message" => mysqli_error($con), "sqlerrno" => mysqli_errno($con), "sqlstate" => mysqli_sqlstate($con));
-    echo "duplicate";
-} else {
-    $response = array("success" => true);
+try{
+   $pdo = new PDO($dsn, $username, $password);
+   $sql = "INSERT INTO user (username, password) VALUES ('{$username}', '{$hashPwd}')";
+   $result = $pdo -> prepare($sql);
+   $result->execute();
+   echo "Success";
+} catch (PDOException $e){
+   echo "duplicate";
 }
-
-//echo json_encode($response);
-
-mysqli_close($con);
-
 ?>

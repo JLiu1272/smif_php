@@ -1,26 +1,6 @@
 <?php
-	ini_set('display_errors',1);
-	ini_set('display_startup_errors',1);
-	error_reporting(E_ALL);
-
-	$dbhost = "smif.ct8vehnhv9o3.us-east-1.rds.amazonaws.com";
-	$dbport = "3306";
-	$dbname = "SMIF";
-	$charset = 'utf8' ;
-
-	$dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
-	$username = 'jwt7689';
-	$password = 'smiffy_admin';
-
-	$pdo = new PDO($dsn, $username, $password);
-
-
-	// Check connection
-	/*if ($mysqli->connect_errno)
-	{
-	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	  exit();
-	} */
+	
+	require 'connect.php';
 
 	session_start();
 	header('Content-Type: application/json');
@@ -36,38 +16,38 @@
 	}
 
 	//Getting the user_id 
-	$query_id = "SELECT id FROM user WHERE username='$current_username'";
-	$result_id = $mysqli->query($query_id);
+	//$query_id = "SELECT id FROM user WHERE username='$current_username'";
+	//$result_id = $pdo->query($query_id);
+
+	$query_id = $pdo->prepare("SELECT id FROM user WHERE username='$current_username'");
+	$query_id->execute();
 
 	/* associative array */
 	//Fetches the user id 
-	$row_id = $result_id->fetch_array(MYSQLI_ASSOC);
+	$row_id = $query_id->fetch(PDO::FETCH_ASSOC);
 	$user_id = $row_id["id"];
 
 
 	//Fetches the user id 
-	$sql = "SELECT * FROM items where user_id='$user_id'";
-
-	// Check if there are results
-	if ($result = mysqli_query($con, $sql))
-	{
-		// If so, then create a results array and a temporary one
-		// to hold the data
-		$resultArray = array();
-		$tempArray = array();
-	 
-		// Loop through each row in the result set
-		while($row = $result->fetch_object())
-		{
-			// Add each row into our results array
-			$tempArray = $row;
-		    array_push($resultArray, $tempArray);
-		}
-	 
-		// Finally, encode the array to JSON and output the results
-		echo json_encode($resultArray);
+	$sql = $pdo->prepare("SELECT * FROM items where user_id='$user_id'");
+	$sql->execute();
+	
+	//Check if there are results
+	if($sql->rowCount() > 0){
+	    $resultArray = array();
+	    $tempArray = array();
+            
+            //Loop through each row in the result set
+            while($row = $sql->fetchObject()){
+	    	//Add each row into our results array
+  		$tempArray = $row;
+                array_push($resultArray, $tempArray);
+	    }
+	    //Finally, encode the array to JSON and output the results
+	    echo json_encode($resultArray);		
+	}
+	else{
+		echo 'nothing';
 	}
 
-	//Close connections 
-	mysqli_close($con);
 ?>
