@@ -6,11 +6,11 @@ require 'connect.php';
 session_start();
 header('Content-type: application/json');
 
-//$username = $_POST["username"];
-//$password = $_POST["password"];
+$username = $_POST["username"];
+$password = $_POST["password"];
 
-$username = 'Jennifer';
-$password = '1234';
+//$username = 'Jennifer';
+//$password = '1234';
 
 // get the parameters
 //$username = "Christine";
@@ -33,10 +33,10 @@ $row = $result->fetch(PDO::FETCH_ASSOC);
 $hash = $row["password"];
 
 if(password_verify($password,$hash)){
-	echo 'valid';
+	echo "valid";
 }
 else{
-	echo 'invalid';
+	echo "invalid";
 }
 
 //echo $row["username"] . $row["password"];

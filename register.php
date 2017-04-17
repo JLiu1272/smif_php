@@ -9,8 +9,8 @@
         $charset = 'utf8' ;
  
         $dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
-        $username = 'jwt7689';
-        $password = 'smiffy_admin';
+        $usernamep = 'jwt7689';
+        $passwordp = 'smiffy_admin';
 
 // specify that this will return JSON
 //Creating Session so that I know who is logged in 
@@ -36,12 +36,20 @@ $_SESSION["password"] = $password;
 $hashPwd = password_hash($password, PASSWORD_DEFAULT);
 
 try{
-   $pdo = new PDO($dsn, $username, $password);
+   $pdo = new PDO($dsn, $usernamep, $passwordp);
    $sql = "INSERT INTO user (username, password) VALUES ('{$username}', '{$hashPwd}')";
    $result = $pdo -> prepare($sql);
    $result->execute();
-   echo "Success";
-} catch (PDOException $e){
-   echo "duplicate";
+  
+   //Check whether user being registered
+   //has already been registered
+   if($error == 0000){
+	echo "Success";
+   }	
+   else{
+	echo "duplicate";
+   }
+} catch (Exception $e){
+   echo $e;
 }
 ?>

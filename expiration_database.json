@@ -1,0 +1,747 @@
+{
+    "apples": [
+        "until ripe",
+        "1 month",
+        ""
+    ],
+    "asparagus": [
+        "",
+        "2-3 days",
+        "\u00a0"
+    ],
+    "bacon": [
+        "",
+        "7 days",
+        "1 month"
+    ],
+    "baking powder": [
+        "18 months",
+        "",
+        "\u00a0"
+    ],
+    "baking soda": [
+        "2 years",
+        "",
+        "\u00a0"
+    ],
+    "biscuit, brownie, muffin mix": [
+        "9 months",
+        "",
+        "\u00a0"
+    ],
+    "bouillon products": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "breads, baked with no preservatives": [
+        "",
+        "2-3 weeks",
+        "2-3 months"
+    ],
+    "breads, quick, baked": [
+        "",
+        "\u00a0",
+        "2 months"
+    ],
+    "broccoli, brussels sprouts, green peas, green onions, lima beans, rhubarb, greens, summer squash, mushrooms": [
+        "",
+        "3-5 days",
+        "\u00a0"
+    ],
+    "butter": [
+        "",
+        "2 weeks",
+        "12 months"
+    ],
+    "cabbage, cauliflower, celery, cucumbers, snap beans, lettuce, peppers, tomatoes": [
+        "",
+        "1 week",
+        "\u00a0"
+    ],
+    "cake mixes": [
+        "6-9 months",
+        "",
+        "\u00a0"
+    ],
+    "cake, angel": [
+        "",
+        "\u00a0",
+        "6-12 months"
+    ],
+    "cake, baked, frosted": [
+        "",
+        "\u00a0",
+        "1 month"
+    ],
+    "cake, baked, unfrosted": [
+        "",
+        "\u00a0",
+        "2-4 months"
+    ],
+    "cakes, batter": [
+        "",
+        "\u00a0",
+        "1 month"
+    ],
+    "cakes, fruit": [
+        "",
+        "\u00a0",
+        "6-12 months"
+    ],
+    "canned fish": [
+        "1 year",
+        "",
+        "not recommended"
+    ],
+    "canned fruit": [
+        "1 year",
+        "2-4 days (opened)",
+        ""
+    ],
+    "canned fruit juices": [
+        "1 year",
+        "3-4 days (opened)",
+        ""
+    ],
+    "canned meat": [
+        "",
+        "1 year",
+        "\u00a0"
+    ],
+    "canned or dried vegetables": [
+        "1 year",
+        "1-4 days (opened/cooked)",
+        ""
+    ],
+    "canned or dry milk (unopened)": [
+        "",
+        "\u00a0",
+        "6 months"
+    ],
+    "carrots, beets, parsnips, radishes, turnips": [
+        "",
+        "2 weeks",
+        "\u00a0"
+    ],
+    "casserole mix": [
+        "9-12 months",
+        "",
+        "\u00a0"
+    ],
+    "catsup, chili sauce": [
+        "12 months (unopened) 1 month (opened)",
+        "",
+        "\u00a0"
+    ],
+    "cheese, parmesan, grated": [
+        "10 months (unopened) 2 months (opened)",
+        "",
+        "\u00a0"
+    ],
+    "chocolate": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "chocolate syrup": [
+        "2 years (unopened)",
+        "6 months (opened)",
+        ""
+    ],
+    "cinnamon rolls, partially baked": [
+        "",
+        "\u00a0",
+        "2 months"
+    ],
+    "citrus fruits": [
+        "",
+        "2-6 weeks",
+        "\u00a0"
+    ],
+    "clams, oyster (shucked) and scallops": [
+        "",
+        "7-9 days",
+        "\u00a0"
+    ],
+    "cocoa mixes": [
+        "8 months",
+        "",
+        "\u00a0"
+    ],
+    "coconut, shredded": [
+        "12 months (unopened) 6 months (opened)",
+        "",
+        "\u00a0"
+    ],
+    "coffee": [
+        "1 year (unopened) 2-4 weeks (opened)",
+        "",
+        "\u00a0"
+    ],
+    "coffee, instant": [
+        "6 months (unopened) 2 months (opened)",
+        "",
+        "\u00a0"
+    ],
+    "coffee, lighteners (dry)": [
+        "9 months (unopened) 6 months (opened)",
+        "",
+        "\u00a0"
+    ],
+    "cooked fish": [
+        "",
+        "3-4 days",
+        "1 month"
+    ],
+    "cooked meat, gravies made with meat stock": [
+        "",
+        "2-3 days",
+        "2-3 months"
+    ],
+    "cooked poultry": [
+        "",
+        "2-3 days",
+        "6 months"
+    ],
+    "cookies, baked, homemade": [
+        "",
+        "2-3 weeks",
+        "6-12 months"
+    ],
+    "cookies, dough": [
+        "",
+        "1-2 days",
+        "3 months"
+    ],
+    "cookies, homemade": [
+        "2-3 weeks",
+        "",
+        "\u00a0"
+    ],
+    "cookies, packaged": [
+        "2 months",
+        "",
+        "\u00a0"
+    ],
+    "corn": [
+        "",
+        "1 day",
+        "\u00a0"
+    ],
+    "corn meal": [
+        "",
+        "1 year",
+        "\u00a0"
+    ],
+    "cornstarch": [
+        "18 months",
+        "",
+        "\u00a0"
+    ],
+    "cottage cheese": [
+        "",
+        "1 week",
+        "3 months"
+    ],
+    "crab": [
+        "",
+        "7 days",
+        "2 months"
+    ],
+    "crackers": [
+        "3 months",
+        "",
+        "\u00a0"
+    ],
+    "cream": [
+        "",
+        "1-2 weeks",
+        "\u00a0"
+    ],
+    "croutons and bread crumbs": [
+        "6 months",
+        "6 months",
+        "1 year"
+    ],
+    "cured pork and lunch meat": [
+        "",
+        "1 week",
+        "not recommended"
+    ],
+    "doughnuts, unfrosted": [
+        "",
+        "\u00a0",
+        "2-4 months"
+    ],
+    "dried fruit": [
+        "6 months",
+        "2-4 days (cooked)",
+        ""
+    ],
+    "dried or pickled fish": [
+        "",
+        "3-4 weeks",
+        "\u00a0"
+    ],
+    "egg-containing products: custards, custard sauces, puddings, custard-filled pastries or cakes": [
+        "",
+        "1-2 days",
+        "not recommended"
+    ],
+    "eggs": [
+        "",
+        "2-4 weeks",
+        "1 year"
+    ],
+    "fish salad": [
+        "",
+        "1 day",
+        "\u00a0"
+    ],
+    "flour, white": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "flour, whole or wheat": [
+        "",
+        "6-8 months",
+        "1 year"
+    ],
+    "food": [
+        "room temperature",
+        "refrigerator",
+        "freezer at 0\u00b0f"
+    ],
+    "fresh fish": [
+        "",
+        "1-2 days",
+        "3-6 months"
+    ],
+    "fresh ground meat, stew meat": [
+        "",
+        "1-2 days",
+        "3-4 months"
+    ],
+    "fresh livers, hearts, kidneys, other variety meats": [
+        "",
+        "1-2 days",
+        "3-4 months"
+    ],
+    "fresh poultry": [
+        "",
+        "2 days",
+        "6-8 months"
+    ],
+    "fresh roasts, steaks, chops": [
+        "",
+        "3-4 days",
+        "2-3 months"
+    ],
+    "frosting, canned": [
+        "3 months",
+        "",
+        "\u00a0"
+    ],
+    "frosting, mix": [
+        "8 months",
+        "",
+        "\u00a0"
+    ],
+    "fruit juice concentrates": [
+        "",
+        "\u00a0",
+        "1 year"
+    ],
+    "gelatin": [
+        "18 months",
+        "",
+        "\u00a0"
+    ],
+    "grapes": [
+        "",
+        "1-3 weeks",
+        "\u00a0"
+    ],
+    "hard sausage-pepperoni, jerky sticks": [
+        "",
+        "2-3 weeks",
+        "1-2 months"
+    ],
+    "hardcooked eggs": [
+        "",
+        "1 week",
+        "not recommended"
+    ],
+    "herb/spice blends": [
+        "2 years (unopened) 12 months (opened)",
+        "",
+        "\u00a0"
+    ],
+    "herbs": [
+        "6 months",
+        "",
+        "\u00a0"
+    ],
+    "honey, jams, syrups, molasses": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "hot roll mix": [
+        "18 months",
+        "",
+        "\u00a0"
+    ],
+    "hotdogs": [
+        "",
+        "1 week (opened) 2 weeks (unopened)",
+        "1-2 months"
+    ],
+    "ice cream": [
+        "",
+        "\u00a0",
+        "2-3 weeks"
+    ],
+    "imitation bacon bits, etc.": [
+        "4 months",
+        "",
+        "\u00a0"
+    ],
+    "liquid pasteurized eggs or egg substitutes": [
+        "",
+        "10 days (unopened) 3 days (opened)",
+        "1 year (unopened)"
+    ],
+    "lobster (shelled or unshelled)": [
+        "",
+        "3-7 days",
+        "6-12 months"
+    ],
+    "margarine": [
+        "",
+        "1 month",
+        "12 months"
+    ],
+    "mayonnaise": [
+        "",
+        "10-12 weeks",
+        "not recommended"
+    ],
+    "meat pies, stews, casseroles, meat salads": [
+        "",
+        "2-3 days",
+        "3 months"
+    ],
+    "melons, most varieties": [
+        "",
+        "1 week",
+        "\u00a0"
+    ],
+    "milk": [
+        "",
+        "1 week",
+        "1 month"
+    ],
+    "muffins, baked": [
+        "",
+        "\u00a0",
+        "6-12 months"
+    ],
+    "mustard, prepared yellow (refrigerate": [
+        "2 years (unopened) for longer storage) 6-8 months (opened)",
+        "",
+        "\u00a0"
+    ],
+    "natural cheese": [
+        "",
+        "1 month",
+        "4-6 months"
+    ],
+    "nuts, shelled": [
+        "",
+        "6 months",
+        "\u00a0"
+    ],
+    "nuts, unshelled": [
+        "6 months",
+        "",
+        "\u00a0"
+    ],
+    "other extracts": [
+        "12 months",
+        "",
+        "\u00a0"
+    ],
+    "other fresh fruit": [
+        "until ripe",
+        "3-5 days",
+        "9-12 months"
+    ],
+    "pancake mix": [
+        "6-9 months",
+        "",
+        "\u00a0"
+    ],
+    "pasta": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "peaches, nectarines": [
+        "",
+        "2-3 weeks",
+        "\u00a0"
+    ],
+    "peanut butter": [
+        "6 months (unopened)",
+        "2 months (opened)",
+        ""
+    ],
+    "pears (mature but not fully ripe)": [
+        "",
+        "1-3 months",
+        "\u00a0"
+    ],
+    "peas, beans, dried": [
+        "12 months",
+        "",
+        "\u00a0"
+    ],
+    "pectin": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "piecrust, mix": [
+        "6-9 months",
+        "",
+        "\u00a0"
+    ],
+    "pies, fruit": [
+        "",
+        "2-3 days (baked) 1-2 days (unbaked)",
+        "6-8 months (baked) 2-4 months (unbaked)"
+    ],
+    "pies, pumpkin or chiffon": [
+        "",
+        "2-3 days",
+        "1-2 months"
+    ],
+    "pineapple, ripe": [
+        "",
+        "1 week",
+        "\u00a0"
+    ],
+    "popcorn": [
+        "2 years",
+        "",
+        "\u00a0"
+    ],
+    "potatoes, instant": [
+        "6-12 months",
+        "",
+        "\u00a0"
+    ],
+    "poultry pies, stews, creamed dishes, gravies": [
+        "",
+        "1 day",
+        "6 months"
+    ],
+    "poultry salads": [
+        "",
+        "1 day",
+        "\u00a0"
+    ],
+    "poultry stuffing": [
+        "",
+        "1 day",
+        "\u00a0"
+    ],
+    "processed cheese": [
+        "",
+        "1 month",
+        "4-6 months"
+    ],
+    "pudding mixes": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "puddings, canned": [
+        "",
+        "1-2 days (opened)",
+        "\u00a0"
+    ],
+    "rabbit, squirrel": [
+        "",
+        "1-2 days",
+        "12 months"
+    ],
+    "raw yolk, whites": [
+        "",
+        "2-4 days",
+        "1 year"
+    ],
+    "ready-to-eat cereals": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "rice mixes": [
+        "6 months",
+        "",
+        "\u00a0"
+    ],
+    "rice, brown": [
+        "6 months",
+        "",
+        "\u00a0"
+    ],
+    "rice, white": [
+        "2 years",
+        "",
+        "\u00a0"
+    ],
+    "rolls and bread, unbaked": [
+        "",
+        "2-3 weeks",
+        "1 month"
+    ],
+    "salad dressings, bottled": [
+        "12 months (unopened)",
+        "1-3 months (opened)",
+        "not recommended"
+    ],
+    "sauce and gravy mixes": [
+        "6-12 months",
+        "",
+        "\u00a0"
+    ],
+    "sausage, raw from pork, beef, turkey": [
+        "",
+        "1-2 days",
+        "1-2 months"
+    ],
+    "shortening, solid": [
+        "8 months",
+        "",
+        "\u00a0"
+    ],
+    "shrimp": [
+        "",
+        "3-5 days",
+        "6-12 months"
+    ],
+    "smoked fish": [
+        "",
+        "10 days",
+        "4-5 weeks"
+    ],
+    "soft drinks": [
+        "3 months",
+        "",
+        "\u00a0"
+    ],
+    "soup mixes": [
+        "12 months",
+        "",
+        "\u00a0"
+    ],
+    "sour cream, buttermilk, cream cheese": [
+        "",
+        "2 weeks",
+        "not recommended"
+    ],
+    "spices, ground": [
+        "6 months",
+        "",
+        "\u00a0"
+    ],
+    "spices, whole": [
+        "1-2 years",
+        "",
+        "\u00a0"
+    ],
+    "sugar, brown": [
+        "18 months",
+        "",
+        "\u00a0"
+    ],
+    "sugar, confectioners\u2014": [
+        "18 months",
+        "",
+        "\u00a0"
+    ],
+    "sugar, granulated": [
+        "2 years",
+        "",
+        "\u00a0"
+    ],
+    "tea, bags or loose": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "tea, instant": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "toaster pastries": [
+        "2-3 months",
+        "",
+        "\u00a0"
+    ],
+    "uncooked cereals": [
+        "1 year",
+        "",
+        "\u00a0"
+    ],
+    "vegetable oils": [
+        "1-3 months",
+        "",
+        "\u00a0"
+    ],
+    "venison": [
+        "",
+        "3-5 days",
+        "3-4 months"
+    ],
+    "vinegar": [
+        "2 years (unopened) 1 year (opened)",
+        "",
+        "\u00a0"
+    ],
+    "waffles": [
+        "",
+        "\u00a0",
+        "1 month"
+    ],
+    "whipped topping, dry": [
+        "12 months",
+        "",
+        "\u00a0"
+    ],
+    "white potatoes, sweet potatoes, winter squash, rutabagas, dry onions": [
+        "1 week (several months at 50-60\u00b0f)",
+        "",
+        "\u00a0"
+    ],
+    "wild duck, pheasant, goose(whole)": [
+        "",
+        "1-2 days",
+        "6 months"
+    ],
+    "yeast, dry": [
+        "expiration date on package",
+        "",
+        "\u00a0"
+    ],
+    "yogurt": [
+        "",
+        "1 month",
+        "\u00a0"
+    ]
+}
