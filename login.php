@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 	if(password_verify($password,$hash)){
 		$query_id = $pdo->prepare("UPDATE user
-                                    SET token = $token
+                                    SET token = '$token'
                                     WHERE id = $user_id;"); 
         $query_id->execute();
         //echo $token;
