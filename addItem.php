@@ -47,7 +47,11 @@
 	$query_token = "SELECT token_id FROM TOKEN WHERE id=1";
 	
 	$result_token = $mysqli->query($query_token) or trigger_error($mysqli->error."[$query_token]");
-	echo $result_token;
+	//Fetches the user id 
+	$row_token = $result_token->fetch_array(MYSQLI_ASSOC);
+	$user_token = $row_token["token_id"];
+
+	echo $user_token;
 	
 	if($_SERVER['REQUEST_METHOD'] === 'POST'){
 		
