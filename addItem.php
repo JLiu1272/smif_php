@@ -42,6 +42,12 @@
 	$entityBody = file_get_contents('php://input');
 	$d_js =  json_decode($entityBody,true);
 	//$input_name = $d_js['None'][0][0];
+
+	//Getting the user_id 
+	$query_token = "SELECT token_id FROM TOKEN WHERE id=1";
+	
+	$result_token = $mysqli->query($query_token) or trigger_error($mysqli->error."[$query_token]");
+	echo $result_token;
 	
 	if($_SERVER['REQUEST_METHOD'] === 'POST'){
 		
@@ -66,7 +72,15 @@
 		$row_id = $result_id->fetch_array(MYSQLI_ASSOC);
 		$user_id = $row_id["id"];
 
-		//$user_id = 2;
+		//Getting the user_id 
+		$query_token = "SELECT token_id FROM TOKEN WHERE id=1";
+		
+		$result_token = $mysqli->query($query_token) or trigger_error($mysqli->error."[$query_token]");
+
+		//Fetches the user id 
+		$row_token = $result_token->fetch_array(MYSQLI_ASSOC);
+		$user_token = $row_token["token_id"];
+		echo $user_token;
 
 		$sql = "INSERT INTO `items`
 				(name, status, date_in, expiration_date, user_id)
@@ -84,8 +98,10 @@
 			$socketClient = new SocketClient($certificate, 'gateway.sandbox.push.apple.com', 2195);
 			$client = new Client($socketClient);
 			$sender = new Sender($client);
+
+
 	
-			$sender->send('51ba8b4b36e68cd747890cc39c2d61f80eb8436255acc55a1ca14f474963c2bc', "$truncate_name", "$truncate_name has been added to fridge"  , 'http://deeplink.com');
+			$sender->send('$result_token', "$truncate_name", "$truncate_name has been added to fridge"  , 'http://deeplink.com');
 		}
 
 		echo json_encode($response);
