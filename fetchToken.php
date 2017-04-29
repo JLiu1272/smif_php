@@ -10,6 +10,6 @@
                        VALUES '$token';");
    		$query_id->execute();
    }
-   echo Hello;
+   echo "Hello";
 
 ?>
