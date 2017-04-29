@@ -1,0 +1,40 @@
+<?php
+namespace Mevdschee\PhpCrudApi\Tests;
+
+class Config
+{
+    /**
+     * Configure one or more database connections as associative arrays.
+     * Tests will be run against any database connection specified here.
+     *
+     * @var array
+     */
+    public static $config = array(
+        'MySQL' => array(
+            'hostname' => '{{test_hostname}}',  // 'localhost' for MySQL, '(Local)' for SQLServer, empty for SQLite
+            'username' => '{{test_username}}',  // May be empty on SQLServer or SQLite
+            'password' => '{{test_password}}',  // May be empty on SQLServer or SQLite
+            'database' => '{{test_database}}',  // NB: Use an empty database, data will be LOST!
+        ),
+        /* Uncomment and update for any databases you want to use.
+        'PostgreSQL' => array(
+            'hostname' => '{{test_hostname}}',
+            'username' => '{{test_username}}',
+            'password' => '{{test_password}}',
+            'database' => '{{test_database}}',
+        ),
+        'SQLite' => array(
+            'hostname' => '{{test_hostname}}',
+            'username' => '{{test_username}}',
+            'password' => '{{test_password}}',
+            'database' => '{{test_database}}',
+        ),
+        'SQLServer' => array(
+            'hostname' => '{{test_hostname}}',
+            'username' => '{{test_username}}',
+            'password' => '{{test_password}}',
+            'database' => '{{test_database}}',
+        ),
+        */
+    );
+}

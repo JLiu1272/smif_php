@@ -10,9 +10,8 @@
 		$current_password = $_SESSION["password"];
 	}
 	else{
-		$current_username = "Jennifer";
+		$current_username = "Christine";
 		$current_password = "1234";
-		echo "Dummy Variable Used \n Username: Jennifer \n Password: 1234";
 	}
 
 	//Getting the user_id 

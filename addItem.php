@@ -17,6 +17,8 @@
 	$current_username = "";
 	$current_password = "";
 
+	var_dump($_POST);
+
 	if(isset($current_username) && isset($current_password)){
 		$current_username = 'Christine';
 		$current_password = '1234';
@@ -93,6 +95,7 @@
 		}
 
 		echo json_encode($response);
+		echo "Hello";
 		mysqli_close($con);
 	}
 ?>

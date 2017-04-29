@@ -1,9 +1,4 @@
 {
-<<<<<<< HEAD
-    "require": {
-        "jwage/php-apns": "^0.0.3"
-    }
-=======
   "name": "mevdschee/php-crud-api",
   "type": "library",
   "description": "Single file PHP script that adds a REST API to a SQL database.",
@@ -39,5 +34,4 @@
   "autoload": {
     "files": ["api.php"]
   }
->>>>>>> 25afd1c6334b2577ddb64462bd553166b956e182
 }
