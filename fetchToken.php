@@ -19,7 +19,7 @@
       $row = $result->fetch(PDO::FETCH_ASSOC);
       $hash = $row["password"];
       $user_id = $row["id"];
-      echo $user_id;
+      echo $token;
 
       if(password_verify($password,$hash)){
          $query_id = $pdo->prepare("UPDATE user
