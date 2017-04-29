@@ -8,6 +8,7 @@
 
    $username = "Christine";
    $password = "1234";
+   $token = "2341";
 
    $query = "SELECT id, username, password FROM user WHERE username='$username'";
    $result = $pdo->prepare($query);
