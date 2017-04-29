@@ -21,8 +21,9 @@
    echo $user_id;
 
    if(password_verify($password,$hash)){
-      $query_id = $pdo->prepare("INSERT INTO user (token, id) 
-         VALUES ('$token', '$user_id')"); 
+      $query_id = $pdo->prepare("UPDATE user
+                                 SET token = $token
+                                 WHERE id = $id;"); 
       $query_id->execute();
       echo $token;
    }
