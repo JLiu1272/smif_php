@@ -7,6 +7,7 @@
    /*$query_id = $pdo->prepare("INSERT INTO TOKEN (token_id) VALUES ('3321')");
    $query_id->execute();*/
    echo "Hello";
+   echo "Hello2";
 
    if($_SERVER['REQUEST_METHOD'] === 'POST'){
       echo "Hello";
