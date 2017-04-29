@@ -23,7 +23,7 @@
    if(password_verify($password,$hash)){
       $query_id = $pdo->prepare("UPDATE user
                                  SET token = $token
-                                 WHERE id = $id;"); 
+                                 WHERE id = $user_id;"); 
       $query_id->execute();
       echo $token;
    }
