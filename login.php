@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                                     SET token = $token
                                     WHERE id = $user_id;"); 
         $query_id->execute();
-        echo $token;
+        //echo $token;
 		echo "valid";
 	}
 	else{
