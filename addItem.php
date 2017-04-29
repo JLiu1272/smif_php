@@ -39,11 +39,7 @@
 	}
 
 	//Grabbing Values from app 
-	//$name = mysqli_real_escape_string($con, $_POST["name"]); 
-	//$date_in = $_POST["date_entered"];
-	//$expiration_date = $_POST["expiration_date"];
 	$entityBody = file_get_contents('php://input');
-	// die($entityBody);
 	$d_js =  json_decode($entityBody,true);
 	//$input_name = $d_js['None'][0][0];
 	
@@ -84,12 +80,12 @@
 		} else {
 		    $response = array("success" => true);
 
-	//		$certificate = new Certificate(file_get_contents('/Users/JenniferLiu/Desktop/smif_final/apple_push_notification_production.pem'));
-	//		$socketClient = new SocketClient($certificate, 'gateway.sandbox.push.apple.com', 2195);
-	//		$client = new Client($socketClient);
-	//		$sender = new Sender($client);
-	//
-	//		$sender->send('51ba8b4b36e68cd747890cc39c2d61f80eb8436255acc55a1ca14f474963c2bc', "$truncate_name", "$truncate_name has been added to fridge"  , 'http://deeplink.com');
+			$certificate = new Certificate(file_get_contents('smif_push_notification.pem'));
+			$socketClient = new SocketClient($certificate, 'gateway.sandbox.push.apple.com', 2195);
+			$client = new Client($socketClient);
+			$sender = new Sender($client);
+	
+			$sender->send('51ba8b4b36e68cd747890cc39c2d61f80eb8436255acc55a1ca14f474963c2bc', "$truncate_name", "$truncate_name has been added to fridge"  , 'http://deeplink.com');
 		}
 
 		echo json_encode($response);
