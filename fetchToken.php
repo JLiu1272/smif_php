@@ -5,8 +5,8 @@
    header('Content-Type: application/json');
 
    /*$query_id = $pdo->prepare("INSERT INTO TOKEN (token_id) VALUES ('3321')");
-   $query_id->execute();
-   echo "Hello";*/
+   $query_id->execute();*/
+   echo "Hello";
 
    if($_SERVER['REQUEST_METHOD'] === 'POST'){
       echo "Hello";
