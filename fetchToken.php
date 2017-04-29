@@ -4,17 +4,54 @@
    session_start();
    header('Content-Type: application/json');
 
-   /*$query_id = $pdo->prepare("INSERT INTO TOKEN (token_id) VALUES ('3321')");
-   $query_id->execute();*/
    echo "Hello";
-   echo "Hello2";
+
+   /*$username = "Christine";
+   $password = "1234";*/
+
+   /*$query = "SELECT id, username, password FROM user WHERE username='$username'";
+      $result = $pdo->prepare($query);
+      $result->execute();
+
+      associative array
+      $row = $result->fetch(PDO::FETCH_ASSOC);
+      $hash = $row["password"];
+      $user_id = $row["id"];
+
+      if(password_verify($password,$hash)){
+         $query_id = $pdo->prepare("INSERT INTO user (token, id) 
+            VALUES ('$token', '$user_id')"); 
+         $query_id->execute();
+         echo $token;
+      }
+      else{
+         echo "invalid";
+      }
+   */   
 
    if($_SERVER['REQUEST_METHOD'] === 'POST'){
-      echo "Hello";
    	$token = $_POST["token"];
-   	$query_id = $pdo->prepare("INSERT INTO TOKEN (token_id) VALUES ('$token')");
-   	$query_id->execute();
-   	echo $token;
+      $username = $_POST["username"];
+      $pw = $_POST["pw"];
+
+      $query = "SELECT id, username, password FROM user WHERE username='$username'";
+      $result = $pdo->prepare($query);
+      $result->execute();
+
+      /* associative array */
+      $row = $result->fetch(PDO::FETCH_ASSOC);
+      $hash = $row["password"];
+      $user_id = $row["id"];
+
+      if(password_verify($password,$hash)){
+         $query_id = $pdo->prepare("INSERT INTO user (token, id) 
+            VALUES ('$token', '$user_id')"); 
+         $query_id->execute();
+         echo $token;
+      }
+      else{
+         echo "invalid";
+      }
    }
 
 ?>

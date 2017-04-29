@@ -42,16 +42,6 @@
 	$entityBody = file_get_contents('php://input');
 	$d_js =  json_decode($entityBody,true);
 	//$input_name = $d_js['None'][0][0];
-
-	//Getting the user_id 
-	$query_token = "SELECT token_id FROM TOKEN WHERE id=1";
-	
-	$result_token = $mysqli->query($query_token) or trigger_error($mysqli->error."[$query_token]");
-	//Fetches the user id 
-	$row_token = $result_token->fetch_array(MYSQLI_ASSOC);
-	$user_token = $row_token["token_id"];
-
-	echo $user_token;
 	
 	if($_SERVER['REQUEST_METHOD'] === 'POST'){
 		
@@ -84,7 +74,6 @@
 		//Fetches the user id 
 		$row_token = $result_token->fetch_array(MYSQLI_ASSOC);
 		$user_token = $row_token["token_id"];
-		echo $user_token;
 
 		$sql = "INSERT INTO `items`
 				(name, status, date_in, expiration_date, user_id)
@@ -105,7 +94,7 @@
 
 
 	
-			$sender->send('$result_token', "$truncate_name", "$truncate_name has been added to fridge"  , 'http://deeplink.com');
+			$sender->send('$user_token', "$truncate_name", "$truncate_name has been added to fridge"  , 'http://deeplink.com');
 		}
 
 		echo json_encode($response);
