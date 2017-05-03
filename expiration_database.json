@@ -14,10 +14,25 @@
         "7 days",
         "1 month"
     ],
+    "pringles": [
+        "",
+        "1 year",
+        "1 month"
+    ],
     "baking powder": [
         "18 months",
         "",
         "\u00a0"
+    ],
+    "banana": [
+        "1 month",
+        "1 month",
+        "1 month"
+    ],
+    "peanutbutter": [
+        "1 year",
+        "1 year",
+        "1 year"
     ],
     "baking soda": [
         "2 years",
@@ -369,7 +384,7 @@
         "2-3 weeks",
         "1-2 months"
     ],
-    "hardcooked eggs": [
+    "eggs": [
         "",
         "1 week",
         "not recommended"
@@ -423,6 +438,11 @@
         "",
         "1 month",
         "12 months"
+    ],
+    "oranges": [
+        "",
+        "4 weeks",
+        "1 months"
     ],
     "mayonnaise": [
         "",
@@ -584,7 +604,7 @@
         "2-4 days",
         "1 year"
     ],
-    "ready-to-eat cereals": [
+    "cereals": [
         "1 year",
         "",
         "\u00a0"
@@ -604,7 +624,7 @@
         "",
         "\u00a0"
     ],
-    "rolls and bread, unbaked": [
+    "bread": [
         "",
         "2-3 weeks",
         "1 month"

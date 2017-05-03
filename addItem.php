@@ -42,6 +42,7 @@
 	$entityBody = file_get_contents('php://input');
 	$d_js =  json_decode($entityBody,true);
 	//$input_name = $d_js['None'][0][0];
+
 	
 	if($_SERVER['REQUEST_METHOD'] === 'POST'){
 		
