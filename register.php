@@ -35,21 +35,23 @@ $_SESSION["password"] = $password;
 //Hash password 
 $hashPwd = password_hash($password, PASSWORD_DEFAULT);
 
-try{
-   $pdo = new PDO($dsn, $usernamep, $passwordp);
-   $sql = "INSERT INTO user (username, password) VALUES ('{$username}', '{$hashPwd}')";
-   $result = $pdo -> prepare($sql);
-   $result->execute();
-  
-   //Check whether user being registered
-   //has already been registered
-   if($error == 0000){
-	echo "Success";
-   }	
-   else{
-	echo "duplicate";
-   }
-} catch (Exception $e){
-   echo $e;
-}
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+  try{
+     $pdo = new PDO($dsn, $usernamep, $passwordp);
+     $sql = "INSERT INTO user (username, password) VALUES ('{$username}', '{$hashPwd}')";
+     $result = $pdo -> prepare($sql);
+     $result->execute();
+    
+     //Check whether user being registered
+     //has already been registered
+     if($error == 0000){
+  	echo "Success";
+     }	
+     else{
+  	echo "duplicate";
+     }
+  } catch (Exception $e){
+     echo $e;
+  }
+}  
 ?>
