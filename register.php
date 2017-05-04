@@ -36,6 +36,24 @@ $_SESSION["password"] = $password;
 $hashPwd = password_hash($password, PASSWORD_DEFAULT);
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+  // get the parameters
+  //$username = "Christine";
+  //$password = "1234";
+
+  $username = $_POST["username"];
+  $password = $_POST["password"];
+
+  //Session 
+  //This ensures that this information is accessible throughout
+  //the application
+  $_SESSION["username"] = $username;
+  $_SESSION["password"] = $password;
+
+  // perform the insert
+  //Hash password 
+  $hashPwd = password_hash($password, PASSWORD_DEFAULT);
+    
   try{
      $pdo = new PDO($dsn, $usernamep, $passwordp);
      $sql = "INSERT INTO user (username, password) VALUES ('{$username}', '{$hashPwd}')";
