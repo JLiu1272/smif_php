@@ -9,7 +9,7 @@ header('Content-type: application/json');
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
 	$username = $_POST["username"];
 	$password = $_POST["password"];
-	$token = $_POST["token"];
+	//$token = $_POST["token"];
 
 	//Session 
 	//This ensures that this information is accessible throughout
@@ -28,10 +28,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
   	$user_id = $row["id"];
 
 	if(password_verify($password,$hash)){
-		$query_id = $pdo->prepare("UPDATE user
-                                    SET token = '$token'
-                                    WHERE id = $user_id;"); 
-        $query_id->execute();
+		//$query_id = $pdo->prepare("UPDATE user
+                                    //SET token = '$token'
+                                    //WHERE id = $user_id;"); 
+        //$query_id->execute();
         //echo $token;
 		echo "valid";
 	}

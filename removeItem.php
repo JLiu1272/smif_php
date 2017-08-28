@@ -34,12 +34,8 @@
 		
 		$input_name = $_POST["name"];
 		$truncate_name = substr($input_name, 3); 
-
-		//Testing
-		$status = 0;
-		$date_in = $_POST["date_in"];
-		$expiration_date = $_POST["date_left"];
-
+		
+		//$truncate_name = "Cereal";
 
 		//Getting the user_id 
 		$query_id = "SELECT id FROM user WHERE username='$current_username'";
@@ -52,7 +48,7 @@
 
 		//$user_id = 2;
 
-		$sql = "DELETE FROM item WHERE items=input_name";
+		$sql = "DELETE FROM items WHERE name='$truncate_name' and user_id='$user_id'";
 
 		// Check connection
 		if (!mysqli_query($con, $sql)) {
